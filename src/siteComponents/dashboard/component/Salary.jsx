@@ -15,7 +15,7 @@ const Salary = ({language, salary, setSalary, tax, setTax, salaryAfterTax, setSa
             setTax(res.data.taxPercentage)
             netSalary();
         })
-    },[salaryAfterTax])
+    },[salaryAfterTax, salary])
 
     const netSalary = () => {
         let taxPercentage = (100 - tax) / 100

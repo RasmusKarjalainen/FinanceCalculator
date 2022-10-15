@@ -99,3 +99,7 @@ a {
 label {
   color: white
 }
+
+.expenseTable td {
+  font-size: 30px;
+}

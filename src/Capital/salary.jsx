@@ -19,7 +19,7 @@ const Salary = ({language}) => {
             tax.current.value = res.data.taxPercentage
             netSalary()
         })
-    })
+    },[])
 
     const netSalary = () => {
         if (salary.current.value && tax.current.value) {
